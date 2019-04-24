@@ -1,5 +1,5 @@
 <?php
-include "FizzBuzz.php";
+include dirname(__DIR__)."/src/FizzBuzz.php";
 
 class FizzBuzzTest extends PHPUnit_Framework_TestCase
 {

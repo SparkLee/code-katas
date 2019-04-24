@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites/>
+<testsuites>
+  <testsuite name="fizzbuzz test suite" tests="9" assertions="9" failures="0" errors="0" time="0.002000">
+    <testsuite name="FizzBuzzTest" file="D:\spark\www\code-katas\FizzBuzz\tests\FizzBuzzTest.php" tests="9" assertions="9" failures="0" errors="0" time="0.002000">
+      <testcase name="testShouldReturn1WhenGiven1" class="FizzBuzzTest" file="D:\spark\www\code-katas\FizzBuzz\tests\FizzBuzzTest.php" line="7" assertions="1" time="0.001000"/>
+      <testcase name="testShouldReturnFizzWhenGiven3" class="FizzBuzzTest" file="D:\spark\www\code-katas\FizzBuzz\tests\FizzBuzzTest.php" line="12" assertions="1" time="0.000000"/>
+      <testcase name="testShouldReturnFizzWhenGiven6" class="FizzBuzzTest" file="D:\spark\www\code-katas\FizzBuzz\tests\FizzBuzzTest.php" line="17" assertions="1" time="0.000000"/>
+      <testcase name="testShouldReturnBuzzWhenGiven5" class="FizzBuzzTest" file="D:\spark\www\code-katas\FizzBuzz\tests\FizzBuzzTest.php" line="22" assertions="1" time="0.000000"/>
+      <testcase name="testShouldReturnBuzzWhenGiven10" class="FizzBuzzTest" file="D:\spark\www\code-katas\FizzBuzz\tests\FizzBuzzTest.php" line="27" assertions="1" time="0.000000"/>
+      <testcase name="testShouldReturnFizzBuzzWhenGiven15" class="FizzBuzzTest" file="D:\spark\www\code-katas\FizzBuzz\tests\FizzBuzzTest.php" line="32" assertions="1" time="0.000000"/>
+      <testcase name="testShouldReturnFizzWhenGiven13" class="FizzBuzzTest" file="D:\spark\www\code-katas\FizzBuzz\tests\FizzBuzzTest.php" line="37" assertions="1" time="0.000000"/>
+      <testcase name="testShouldReturnBuzzWhenGiven52" class="FizzBuzzTest" file="D:\spark\www\code-katas\FizzBuzz\tests\FizzBuzzTest.php" line="42" assertions="1" time="0.000000"/>
+      <testcase name="testShouldReturnFizzBuzzWhenGiven51" class="FizzBuzzTest" file="D:\spark\www\code-katas\FizzBuzz\tests\FizzBuzzTest.php" line="47" assertions="1" time="0.001000"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
