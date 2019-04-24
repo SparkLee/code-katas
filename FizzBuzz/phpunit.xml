@@ -12,7 +12,7 @@
     verbose="true">
     
     <testsuites>
-        <testsuite name="args test suite">
+        <testsuite name="fizzbuzz test suite">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
