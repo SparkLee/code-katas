@@ -3,49 +3,26 @@ include dirname(__DIR__)."/src/FizzBuzz.php";
 
 class FizzBuzzTest extends PHPUnit_Framework_TestCase
 {
-
-    public function testShouldReturn1WhenGiven1()
+    public function blahProvider()
     {
-        $this->assertEquals("1", new FizzBuzz(1));
+        return [
+            ["1", 1],
+            ["2", 2],
+            ["Fizz", 3],
+            ["Fizz", 6],
+            ["Buzz", 5],
+            ["FizzBuzz", 15],
+            ["Fizz", 13],
+            ["Buzz", 52],
+            ["FizzBuzz", 51],
+        ];
     }
 
-    public function testShouldReturnFizzWhenGiven3()
+    /**
+     * @dataProvider blahProvider
+     */
+    public function testFizzBuzz($expected, $num)
     {
-        $this->assertEquals("Fizz", new FizzBuzz(3));
-    }
-
-    public function testShouldReturnFizzWhenGiven6()
-    {
-        $this->assertEquals("Fizz", new FizzBuzz(6));
-    }
-
-    public function testShouldReturnBuzzWhenGiven5()
-    {
-        $this->assertEquals("Buzz", new FizzBuzz(5));
-    }
-
-    public function testShouldReturnBuzzWhenGiven10()
-    {
-        $this->assertEquals("Buzz", new FizzBuzz(10));
-    }
-
-    public function testShouldReturnFizzBuzzWhenGiven15()
-    {
-        $this->assertEquals("FizzBuzz", new FizzBuzz(15));
-    }
-
-    public function testShouldReturnFizzWhenGiven13()
-    {
-        $this->assertEquals("Fizz", new FizzBuzz(13));
-    }
-
-    public function testShouldReturnBuzzWhenGiven52()
-    {
-        $this->assertEquals("Buzz", new FizzBuzz(52));
-    }
-
-    public function testShouldReturnFizzBuzzWhenGiven51()
-    {
-        $this->assertEquals("FizzBuzz", new FizzBuzz(51));
+        $this->assertEquals($expected, new FizzBuzz($num));
     }
 }
