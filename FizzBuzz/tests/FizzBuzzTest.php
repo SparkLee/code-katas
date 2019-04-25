@@ -3,7 +3,7 @@ include dirname(__DIR__)."/src/FizzBuzz.php";
 
 class FizzBuzzTest extends PHPUnit_Framework_TestCase
 {
-    public function blahProvider()
+    public function fizzBuzzProvider()
     {
         return [
             ["1", 1],
@@ -19,7 +19,7 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider blahProvider
+     * @dataProvider fizzBuzzProvider
      */
     public function testFizzBuzz($expected, $num)
     {
